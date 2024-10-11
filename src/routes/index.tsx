@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { type DocumentHead, z } from "@builder.io/qwik-city";
 import { formAction$, zodForm$ } from "@modular-forms/qwik";
-import z from "zod";
 
 const LoginSchema = z.object({
   email: z.string().email(),
